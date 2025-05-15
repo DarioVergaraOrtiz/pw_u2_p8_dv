@@ -1,17 +1,18 @@
 <template>
- <HolaMundoView></HolaMundoView>
-
+  <!--<HolaMundoView/>-->
+  <ContadorVue />
 </template>
 
 <script>
-import HolaMundoView from "./views/HolaMundoView.vue";
+import ContadorVue from "@/components/Contador.vue";
+import HolaMundoView from "@/views/HolaMundoView.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HolaMundoView
-  }
-}
+    ContadorVue,
+  },
+};
 </script>
 
 <style>
@@ -20,7 +21,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #20272e;
   margin-top: 60px;
+}
+p {
+  color: yellow;
+  background: rgb(55, 55, 161);
 }
 </style>
