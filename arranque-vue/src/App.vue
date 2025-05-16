@@ -1,16 +1,17 @@
 <template>
   <!--<HolaMundoView/>-->
-  <ContadorVue />
+  <!--<ContadorVue/>-->
+  <EstudianteView/>
 </template>
 
 <script>
-import ContadorVue from "@/components/Contador.vue";
-import HolaMundoView from "@/views/HolaMundoView.vue";
+
+import EstudianteView from "@/views/EstudianteView.vue";
 
 export default {
   name: "App",
   components: {
-    ContadorVue,
+    EstudianteView,
   },
 };
 </script>
