@@ -10,7 +10,7 @@
     <input v-model="nuevoGenero" id="id_genero" type="text" />
     <label for="id_apodo">Apodo:</label>
     <input v-model="nuevoApodo" id="id_apodo" type="text" />
-    <button @click="agregarEstudiante()">Agregar Estudiante</button>
+    <button @click="agregarEstudiante()">Agregar</button>
 
     <ul>
       <li v-for="{ nombre, apellido, edad, genero, apodo } in lista" :key="nombre">
@@ -56,9 +56,55 @@ export default {
 };
 </script>
 
-<style>
-* {
-  font-size: 21px;
-  font-family: "Times New Roman", Times, serif;
+<style scoped>
+
+.container {
+  background: #baa4f7;
+  border: 1px solid;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 50px;
 }
+
+label {
+  display: block;
+  color: #333;
+  text-align: left;
+}
+
+input {
+  background: #c4deff;
+  color: black;
+  width: 96%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+button {
+  background: #7ba5db;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 150px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+li {
+  background: #c4deff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 17px;
+
+}
+
 </style>
