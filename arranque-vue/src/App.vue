@@ -1,17 +1,17 @@
 <template>
   <!--<HolaMundoView/>-->
   <!--<ContadorVue/>-->
-  <EstudianteTablaView/>
+  <PaisTablaView/>
 </template>
 
 <script>
 
-import EstudianteTablaView from "@/views/EstudianteTablaView.vue";
+import PaisTablaView from "@/views/PaisTablaView.vue";
 
 export default {
   name: "App",
   components: {
-    EstudianteTablaView,
+    PaisTablaView,
   },
 };
 </script>
