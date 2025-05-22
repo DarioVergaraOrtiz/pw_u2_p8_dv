@@ -1,17 +1,17 @@
 <template>
   <!--<HolaMundoView/>-->
   <!--<ContadorVue/>-->
-  <PaisTablaView/>
+  <PreguntaView/>
 </template>
 
 <script>
 
-import PaisTablaView from "@/views/PaisTablaView.vue";
+import PreguntaView from "@/views/PreguntaView.vue";
 
 export default {
   name: "App",
   components: {
-    PaisTablaView,
+    PreguntaView,
   },
 };
 </script>
@@ -22,11 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #20272e;
+  color: #2c3e50;
   margin-top: 60px;
-}
-p {
-  color: yellow;
-  background: rgb(55, 55, 161);
 }
 </style>
