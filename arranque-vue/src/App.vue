@@ -1,17 +1,17 @@
 <template>
   <!--<HolaMundoView/>-->
   <!--<ContadorVue/>-->
-  <PreguntaView/>
+  <Consejo />
 </template>
 
 <script>
 
-import PreguntaView from "@/views/PreguntaView.vue";
+import Consejo from "@/components/Consejo.vue";
 
 export default {
   name: "App",
   components: {
-    PreguntaView,
+    Consejo,
   },
 };
 </script>
