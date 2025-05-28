@@ -1,0 +1,75 @@
+/* 1. Importa una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* 2. Degradado de fondo */
+  background: linear-gradient(135deg, rgb(158, 116, 182) 0%, rgb(186, 141, 212) 100%);
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 3. Contenedor en forma de tarjeta */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* 4. Títulos con peso y espaciado */
+h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* 5. Estilo del párrafo */
+p {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+/* 6. Botón moderno */
+button {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 7. Media query para pantallas muy pequeñas */
+@media (max-width: 360px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  button {
+    width: 100%;
+  }
+}
