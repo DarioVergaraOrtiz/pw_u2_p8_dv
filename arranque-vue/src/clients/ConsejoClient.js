@@ -1,4 +1,5 @@
-import axios from 'axios';
+import axios from 'axios'; //Facilita las solicitudes HTTP
+// Importamos axios para realizar solicitudes HTTP
 
 const consultarRespuesta = async () => {
   // esperamos y extraemos advice directamente

@@ -23,7 +23,8 @@ export default {
     async obtenerConsejo() {
       this.cargando = true;
       try {
-        // consultarRespuestaFachada ya devuelve directamente la cadena
+        // Llamada a la función que consulta el API para obtener un consejo
+        console.log('Obteniendo consejo...');
         this.consejo = await consultarRespuestaFachada();
       } catch (error) {
         console.error('Error al obtener consejo:', error);
